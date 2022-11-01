@@ -1,0 +1,11 @@
+ports:
+  - name: Website
+    port: 3000
+    onOpen: open-preview
+  - name: VNC
+    description: full GUI Virtual Desktop
+    port: 6080
+    onOpen: open-browser
+  - name: Server
+    port: 10000
+    onOpen: ignore
