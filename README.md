@@ -8,6 +8,6 @@ curl -sS https://get.symfony.com/cli/installer | bash
 
 mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 
-symfony new . --version="6.1.*" --webapp
+symfony new . --version="6.1.*"
 
 composer require webapp
