@@ -13,3 +13,5 @@ git config --global user.email "you@example.com" \ && git config --global user.n
 symfony new . --version="6.2.*"
 
 composer require webapp
+
+sudo chown -R $(whoami) .
