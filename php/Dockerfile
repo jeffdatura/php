@@ -10,10 +10,6 @@ RUN apt update \
     && pecl install xdebug \
     && echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)\nxdebug.mode=debug\nxdebug.start_with_request=yes" > /usr/local/etc/php/conf.d/xdebug.ini
 
-environment:
-  - XDEBUG_CONFIG=client_host=host.docker.internal client_port=9000
-  - PHP_IDE_CONFIG=serverName=acseo-docker
-
 WORKDIR /var/www/php
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
