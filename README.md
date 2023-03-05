@@ -15,3 +15,9 @@ symfony new . --version="6.2.*"
 composer require webapp
 
 sudo chown -R $(whoami) .
+
+# symfony server
+symfony server:start -d
+
+# phpmyadmin
+php -S localhost:8080
